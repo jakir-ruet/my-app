@@ -2,7 +2,7 @@ import React from "react";
 import CustomCard from "./component/CustomCard";
 import Data from './component/Data.json'
 
-function MyMapper() {
+function MyMapping() {
    console.log(Data[0].name);
    console.log(Data[0].addres)
    return (
@@ -13,4 +13,4 @@ function MyMapper() {
       </div>
    )
 }
-export default MyMapper;
+export default MyMapping;

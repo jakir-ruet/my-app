@@ -1,12 +1,12 @@
 import './App.css';
 import MyProps from '../container/props/MyProps';
-import MyMapper from '../container/mapper/MyMapper';
+import MyMapping from '../container/mapping/MyMapping';
 
 function App() {
   return (
     <div className="App">
       <MyProps />
-      <MyMapper/>
+      <MyMapping/>
     </div>
   );
 }
