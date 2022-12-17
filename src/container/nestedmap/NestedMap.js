@@ -17,12 +17,12 @@ function NestedMap() {
       <div>
          {
             PhoneBooks.map((PhoneBook, index) => 
-               <article>
+               <article key={index}>
                   <p>{PhoneBook.Name}</p>
                   <p>{PhoneBook.Address}</p>
                   {
                      PhoneBook.Contacts.map((Contact, index) => 
-                        <div>
+                        <div key={index}>
                            <p>{Contact.Phone}</p>
                            <p>{Contact.Email}</p>
                         </div>
@@ -31,22 +31,6 @@ function NestedMap() {
                </article>
             )
          }
-
-
-
-
-         {/* {PhoneBooks.map((PhoneBook, index) => (
-            <div key={index}>
-               <p>{PhoneBook.Name}</p>
-               <p>{PhoneBook.Address}</p>
-               {PhoneBook.Contacts.map((Contact, index) => (
-                  <div key={index}>
-                     <p>{Contact.Phone}</p>
-                     <p>{Contact.Email}</p>
-                  </div>
-               ))}
-            </div>
-         ))} */}
       </div>
    )
 }
