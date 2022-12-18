@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './mics/index.css';
 import App from './app/App';
 import reportWebVitals from './mics/reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
