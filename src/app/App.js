@@ -6,6 +6,7 @@ import NestedMap from '../container/nestedmap/NestedMap';
 import ClassComponent from '../container/classcomponent/ClassComponent';
 import StateLifeCycle from '../container/classcomponent/statelifecycle/StateLifeCycle';
 import StateHandler from '../container/statehandler/StateHandler';
+import State from '../container/state/State';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ClassComponent />
       <StateLifeCycle />
       <StateHandler />
+      <State/>
     </div>
   );
 }
