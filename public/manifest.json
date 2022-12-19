@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Learning App",
+  "name": "React Learning App For Learning purpose",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,7 +10,7 @@
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192"
     }
   ],
   "start_url": ".",
