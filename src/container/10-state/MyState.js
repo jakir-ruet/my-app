@@ -14,9 +14,11 @@ class MyState extends Component{
    }
    render() {
       return (
-         <div className="card-body">
-            <p>{this.state.message}</p>
-            <button onClick={() => this.ChangeMessage()} className="btn btn-danger">Click & Test State</button>
+         <div className="card m-2">
+            <div className="card-body">
+               <p>{this.state.message}</p>
+               <button onClick={() => this.ChangeMessage()} className="btn btn-danger">Click & Test State</button>
+            </div>
          </div>
       )
    }

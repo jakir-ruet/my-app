@@ -1,14 +1,11 @@
 import React from "react";
 
 function CustomCard(props) {
-   const { titleText, bodyText } = props;
+   const { cardText } = props;
    return (
-      <div className="card">
-         <div className="card-header">
-            <h2 className="card-title">{titleText}</h2>
-         </div>
+      <div className="card m-2">
          <div className="card-body">
-            <p>{bodyText}</p>
+            <p>{cardText}</p>
          </div>
       </div>
    )
