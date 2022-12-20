@@ -5,7 +5,8 @@ import ClassComponent from "./12-eventhandler/ClassComponent";
 import FuncComponent from "./12-eventhandler/FuncComponent";
 import Props from './9-props/MyProps';
 import EventBind from './13-eventbind/EventBind';
-import ParentComponent from './14-metsasprops/components/ParentComponent';
+import ParentComponent from './14-metsasprops/ParentComponent';
+import ConditionalRendering from './15-condrendering/ConditionalRendering';
 
 function Container() {
    return (
@@ -16,7 +17,8 @@ function Container() {
          {/* <FuncComponent /> */}
          {/* <ClassComponent /> */}
          {/* <EventBind/> */}
-         <ParentComponent />
+         {/* <ParentComponent /> */}
+         <ConditionalRendering />
       </div>
    )
 }
