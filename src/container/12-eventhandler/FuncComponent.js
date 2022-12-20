@@ -7,7 +7,8 @@ function FuncComponent() {
    return (
       <div className="card m-2">
          <div className="card-body">
-            <button onClick={clickMe} className="btn btn-danger">Click Me</button>
+            {/* <button onClick={clickMe} className="btn btn-danger">Click Me</button> */}
+            <button onClick={clickMe()} className="btn btn-danger">Click Me</button>
          </div>
       </div>
    )
