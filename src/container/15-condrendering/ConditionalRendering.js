@@ -9,7 +9,7 @@ class ConditionalRendering extends Component{
       }
    }
    render() {
-      // Way one
+      //// Way one
       // if (this.state.isLoggedIn) {
       //    return (
       //       <div className="card m-2">
@@ -28,29 +28,39 @@ class ConditionalRendering extends Component{
       //       </div>
       //    )
 
-      // Way two
-      let message
-      if (this.state.isLoggedIn) {
-         return (
-            <div className="card m-2">
-               <div className="card-body">
-                  <p className="text-success">Hello, LoggedIn</p>
-               </div>
-            </div>
-         )
-      }
-      else {
-         return (
-            <div className="card m-2">
-               <div className="card-body">
-                  <p className="text-danger">Hello, Logged Out</p>
-               </div>
-            </div>
-         )
-      }
+      //// Way two
+      // let message
+      // if (this.state.isLoggedIn) {
+      //    return (
+      //       <div className="card m-2">
+      //          <div className="card-body">
+      //             <p className="text-success">Hello, LoggedIn</p>
+      //          </div>
+      //       </div>
+      //    )
+      // }
+      // else {
+      //    return (
+      //       <div className="card m-2">
+      //          <div className="card-body">
+      //             <p className="text-danger">Hello, Logged Out</p>
+      //          </div>
+      //       </div>
+      //    )
+      // }
+      // return (
+      //    <div>{ message}</div>
+      // )
+
+      // Ways three
       return (
-         <div>{ message}</div>
+         this.state.isLoggedIn ? (<div>loged</div>) : (<div>logout</div>)
       )
+
+      //// Ways four short circuit method
+      // return (
+      //    this.state.isLoggedIn && <div>Welcome</div>
+      // )
 
       // return (
       //    <div className="card m-2">
