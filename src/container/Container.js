@@ -7,6 +7,8 @@ import Props from './9-props/MyProps';
 import EventBind from './13-eventbind/EventBind';
 import ParentComponent from './14-metsasprops/ParentComponent';
 import ConditionalRendering from './15-condrendering/ConditionalRendering';
+import ListRendering from "./16-listrendering/ListReandering";
+import ListKeyRendering from './16-listrendering/ListKeyRendering';
 
 function Container() {
    return (
@@ -18,7 +20,9 @@ function Container() {
          {/* <ClassComponent /> */}
          {/* <EventBind/> */}
          {/* <ParentComponent /> */}
-         <ConditionalRendering />
+         {/* <ConditionalRendering /> */}
+         {/* <ListRendering/> */}
+         <ListKeyRendering/>
       </div>
    )
 }
