@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react'
 
 function Staff({staff, key}) {
-   return (
-      <div className="card m-2">
-         <div className="card-body">
-            {staff.id} - {staff.name} - {staff.age} - {staff.skill}
-         </div>
+  return (
+     <div className='card'>
+        <div className='card-body'>
+           I am {staff.name}, {staff.age} years old. I know {staff.skill}
+        </div>
       </div>
-   )
+  )
 }
+
 export default Staff;

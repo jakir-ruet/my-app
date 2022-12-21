@@ -1,41 +1,36 @@
 import React from "react";
- 
-function ListRendering() {
-   const names = ['Fahmid', 'Tahmid', 'Afrin', 'Jakir']
+import Staff from "./component/Staff";
+
+function ListKeyRendering() {
+   const staffsName = ['Jakir', 'Jasim', 'Jakia', 'Jabir']
    const staffs = [
       {
          id: 1,
-         name: 'Fahmid',
-         age: 5,
+         name: 'Jakir',
+         age: 35,
          skill: 'ReactJS'
       },
       {
          id: 2,
-         name: 'Tahmid',
-         age: 10,
-         skill: 'RUST'
-      },
-      {
-         id: 3,
-         name: 'Afrin',
+         name: 'Jasim',
          age: 30,
-         skill: 'Graphics Design'
+         skill: 'NodeJS'
       },
       {
-         id: 4, 
-         name: 'Jakir',
-         age: 36,
-         skill: 'System Admin'
+         id: 1,
+         name: 'Jakia',
+         age: 25,
+         skill: 'NextJS'
       }
    ]
-   // const staffList = staffs.map(staff => <nameList key={ staff.id} staff={staff} />)
-   const nameList = names.map((name, index) => <h2 key={index}>{index} - {name}</h2>)
+   // const staffList = staffs.map(staff => < Staff key={staff.id} staff={staff} />)
+   const staffName = staffsName.map((a, index) => <p key={index}>{index}{a}</p>)
    return (
       <div className="card m-2">
          <div className="card-body">
-            { nameList }
+            {staffName}
          </div>
       </div>
    )
 }
-export default ListRendering;
+export default ListKeyRendering;
