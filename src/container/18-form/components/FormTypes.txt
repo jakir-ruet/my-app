@@ -1,0 +1,2 @@
+1. Controlled Form > Controlle by React
+2. Uncontrolled Form > Controlle by HTML DOM
