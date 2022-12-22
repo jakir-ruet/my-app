@@ -10,6 +10,7 @@ import ConditionalRendering from './15-condrendering/ConditionalRendering';
 import ListRendering from "./16-listrendering/ListReandering";
 import ListKeyRendering from './16-listrendering/ListKeyRendering';
 import KeyUses from "./16-listrendering/KeyUses";
+import KeyUseCorrect from './16-listrendering/components/ListItem'
 
 function Container() {
    return (
@@ -24,7 +25,8 @@ function Container() {
          {/* <ConditionalRendering /> */}
          {/* <ListRendering/> */}
          {/* <ListKeyRendering/> */}
-         <KeyUses/>
+         {/* <KeyUses/> */}
+         <KeyUseCorrect/>
       </div>
    )
 }

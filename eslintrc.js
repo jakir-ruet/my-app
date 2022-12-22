@@ -1,0 +1,85 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "prettier",
+    "plugin:jsx-a11y/recommended",
+    "plugin:node/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "env": {
+    "amd": true,
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "es6": true,
+    "jest": true,
+    "worker": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "no-console": "warn",
+    "react/state-in-constructor": 0,
+    "indent": 0,
+    "linebreak-style": 0,
+    "react/prop-types": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "spaced-comment": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "requireConfigFile": 0,
+    "parser": "babel-eslint",
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "req|res|next|val"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100,
+        "tabWidth": 4,
+        "semi": true,
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "plugins": [
+    "prettier",
+    "react",
+    "react-hooks"
+  ]
+}
