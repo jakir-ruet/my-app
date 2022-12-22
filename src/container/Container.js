@@ -11,6 +11,7 @@ import ListRendering from "./16-listrendering/ListReandering";
 import ListKeyRendering from './16-listrendering/ListKeyRendering';
 import KeyUses from "./16-listrendering/KeyUses";
 import KeyUseCorrect from './16-listrendering/components/ListItem'
+import Styling from "./17-styling/Styling";
 
 function Container() {
    return (
@@ -26,7 +27,8 @@ function Container() {
          {/* <ListRendering/> */}
          {/* <ListKeyRendering/> */}
          {/* <KeyUses/> */}
-         <KeyUseCorrect/>
+         {/* <KeyUseCorrect/> */}
+         <Styling myClassOne={true} />
       </div>
    )
 }

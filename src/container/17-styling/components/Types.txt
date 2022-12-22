@@ -1,0 +1,5 @@
+Styling components
+   1. CSS Stylesheets
+   2. Inline Styling
+   3. CSS Modules
+   4. CSS JS Libraries (Style Component)
