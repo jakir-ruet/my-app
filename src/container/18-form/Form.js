@@ -38,6 +38,7 @@ class Form extends Component{
    submitHandler = (e) => {
       const { title, language, textareaText, isCheckedTrue } = this.state;
       e.preventDefault(); //due to disable the page reload
+      alert(`${title} ${language} ${textareaText} ${isCheckedTrue}`)
       console.log(title, language, textareaText, isCheckedTrue)
    }
 
