@@ -9,6 +9,7 @@ import ParentComponent from './14-metsasprops/ParentComponent';
 import ConditionalRendering from './15-condrendering/ConditionalRendering';
 import ListRendering from "./16-listrendering/ListReandering";
 import ListKeyRendering from './16-listrendering/ListKeyRendering';
+import KeyUses from "./16-listrendering/KeyUses";
 
 function Container() {
    return (
@@ -22,7 +23,8 @@ function Container() {
          {/* <ParentComponent /> */}
          {/* <ConditionalRendering /> */}
          {/* <ListRendering/> */}
-         <ListKeyRendering/>
+         {/* <ListKeyRendering/> */}
+         <KeyUses/>
       </div>
    )
 }
