@@ -1,12 +1,16 @@
 import React from "react";
-import TemperatureInput from "./component/TemperatureInput";
 
-function Lifting() {
-   return (
-      <div className="card m-2">
-         <div className="card-body">
-            <TemperatureInput/>
+function Lifting({celsius = 0}) {
+   if (celsius >= 100) {
+      return (
+         <div className="alert alert-primary m-2" role="alert">
+            Water is boil
          </div>
+      )
+   }
+   return (
+      <div className="alert alert-danger m-2" role="alert">
+         Water is not boil
       </div>
    )
 }

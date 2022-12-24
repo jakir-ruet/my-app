@@ -14,6 +14,7 @@ import KeyUseCorrect from './16-listrendering/components/ListItem'
 import Styling from "./17-styling/Styling";
 import Form from './18-form/Form';
 import Lifting from "./19-lifting/Lifting";
+import Calculator from './19-lifting/component/Calculator';
 
 function Container() {
    return (
@@ -32,7 +33,7 @@ function Container() {
          {/* <KeyUseCorrect/> */}
          {/* <Styling myClassOne={true} /> */}
          {/* <Form/> */}
-         <Lifting/>
+         <Calculator/>
       </div>
    )
 }

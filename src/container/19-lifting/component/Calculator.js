@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import TemperatureInput from "./TemperatureInput";
+import Lifting from "../Lifting";
+import Inputs from './Inputs'
 import { convert, toCelsius, toFahrenheit } from './Converter';
-import
 
 class Calculator extends Component{
    state = {
@@ -10,9 +10,10 @@ class Calculator extends Component{
    }
    handleChange = (e, scale) => {
       this.setState({
+         // temperature: e.target.value,
+         // scale: e.target.value,
          temperature: e.target.value,
-         scale: e.target.value,
-         // temperature: e.target.value, scale
+         scale,
       })
    }
    render() {
@@ -22,16 +23,17 @@ class Calculator extends Component{
       return (
          <div className="card m-2">
             <div className="card-body">
-               <TemperatureInput
+               <Inputs
                   scale='c'
                   temperature={celsius}
                   onTemperatureChange={this.handleChange}
                />
-               <TemperatureInput
+               <Inputs
                   scale='f'
                   temperature={fahrenheit}
                   onTemperatureChange={this.handleChange}
                />
+               <Lifting celsius={parseFloat(celsius)}/>
             </div>
          </div>
       )
