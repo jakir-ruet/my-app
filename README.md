@@ -6,24 +6,25 @@ The purpose of this application is that learning of React JS for Beginner to Adv
 
 ### Step 1:
 
-npm i -D eslint prettier
-npm i -D eslint-plugin-prettier
-npm i -D eslint-config-prettier
-npm i -D eslint-plugin-node
-npm i -D eslint-config-node
-npx install-peerdeps --dev eslint-config-airbnb
+npm i -D eslint prettier \
+npm i -D eslint-plugin-prettier \
+npm i -D eslint-config-prettier \
+npm i -D eslint-plugin-node \
+npm i -D eslint-config-node \
+npx install-peerdeps --dev \
+npx install eslint-config-airbnb --dev
 
 ### Step 2:
 
-Create '.prettierrc' in root directory and type
-{
-"singleQuote": true
+Create '.prettierrc' in root directory and type \
+{ \
+"singleQuote": true \
 }
 
 ### Step 3:
 
-npm install -g eslint
-eslint --init
+npm install -g eslint \
+eslint --init \
 Select some features as per your needs
 
 If it is install successfully then a '.eslintrc.json' file create in the root directory.
