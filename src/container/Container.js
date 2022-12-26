@@ -1,4 +1,4 @@
-import Calculator from './19-lifting/components/Calculator';
+import Mapping from "./15-mapping/Mapping";
 
 function Container() {
    return (
@@ -17,7 +17,8 @@ function Container() {
          {/* <KeyUseCorrect/> */}
          {/* <Styling myClassOne={true} /> */}
          {/* <Form/> */}
-         <Calculator/>
+         {/* <Calculator /> */}
+         <Mapping/>
       </div>
    )
 }
