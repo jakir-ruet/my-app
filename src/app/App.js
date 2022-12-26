@@ -1,14 +1,10 @@
 import './App.css';
-import Header from '../app/Header';
-import Container from '../container/Container';
+import HelloWorld from '../container/1-helloworld/HelloWorld'
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <div className='container'>
-        <Container/>
-      </div>
+      <HelloWorld/>
     </div>
   );
 }
