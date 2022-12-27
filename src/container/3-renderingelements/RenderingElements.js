@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
 function RenderingElements() {
     const MyElement = (
         <div>
-            <h1>Hello, world!</h1>
-            <h2>It is {new Date().toLocaleTimeString()}.</h2>
+            <h1>Rendering</h1>
+            <h2>{new Date().toLocaleTimeString()}.</h2>
         </div>
     );
-    ReactDOM.render(MyElement, document.getElementById('root'));
+    root.render(MyElement);
+    // ReactDOM.render(MyElement, document.getElementById('root'));
 }
 
 setInterval(RenderingElements, 1000);
