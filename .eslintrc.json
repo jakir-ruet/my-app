@@ -2,7 +2,7 @@
   "env": {
     "browser": true,
     "commonjs": true,
-    "es2021": true,
+    "es2020": true,
     "jest": true,
     "node": true
   },
@@ -13,7 +13,6 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:node/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "overrides": [],
@@ -44,7 +43,6 @@
     "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "requireConfigFile": 0,
-    "parser": "babel-eslint",
     "prefer-destructuring": [
       "error",
       {
@@ -67,7 +65,6 @@
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "es6",
         "singleQuote": true,
         "printWidth": 100,
         "tabWidth": 4,

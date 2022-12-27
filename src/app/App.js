@@ -1,12 +1,13 @@
+import HelloJsx from '../container/2-jsx/HelloJsx';
 import './App.css';
-import HelloWorld from '../container/1-helloworld/HelloWorld'
 
 function App() {
-  return (
-    <div className="app">
-      <HelloWorld/>
-    </div>
-  );
+    return (
+        <div className="app">
+            {/* <HelloWorld /> */}
+            <HelloJsx />
+        </div>
+    );
 }
 
 export default App;
