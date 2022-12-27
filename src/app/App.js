@@ -1,11 +1,12 @@
-import HelloJsx from '../container/2-jsx/HelloJsx';
+import RenderingElements from '../container/3-renderingelements/RenderingElements';
 import './App.css';
 
 function App() {
     return (
         <div className="app">
             {/* <HelloWorld /> */}
-            <HelloJsx />
+            {/* <HelloJsx /> */}
+            <RenderingElements />
         </div>
     );
 }
