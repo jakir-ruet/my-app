@@ -33,15 +33,20 @@ npx install eslint-config-airbnb --dev
 
 ### Step 2:
 
-Create '.prettierrc' in root directory and type \
-{ \
-"singleQuote": true \
+Create '.prettierrc' in root directory and type
+```bash
+{
+"singleQuote": true
 }
+```
 
 ### Step 3:
-
-npm install -g eslint \
-eslint --init \
+```bash
+npm install -g eslint
+```
+```bash
+eslint --init
+```
 Select some features as per your needs
 
 If it is install successfully then a '.eslintrc.json' file create in the root directory.
